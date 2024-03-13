@@ -87,7 +87,7 @@ const Navbar = () => {
                   <a href="./interests">Interests</a>
                 </li>
                 <li className="my-4 text-center hover:shadow-[rgba(0,0,0,1)_0px_5px_4px_-5px] hover:shadow-sky-500/50">
-                  <a href="./connectWithMe">Connect With Me</a>
+                  <a href="./connectWithMe">Contact</a>
                 </li>
                 <li className="my-4 text-center hover:shadow-[rgba(0,0,0,1)_0px_5px_4px_-5px] hover:shadow-sky-500/50">
                   <a href="./projects">Projects</a>
