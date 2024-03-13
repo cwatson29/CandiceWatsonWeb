@@ -21,6 +21,18 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/about/page.jsx",
+    "app/connectWithMe/page.jsx",
+    "app/interests.tsx/page.jsx",
+    "app/projects/page.jsx",
+    "app/Resume/page.jsx",
+    "app/page.jsx",
+    "app/layout.jsx"
+  ],
   "exclude": ["node_modules"]
 }
