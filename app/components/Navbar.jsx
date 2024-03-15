@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Whisper } from "next/font/google";
+import { goToSection } from "../page";
 
 const whisper = Whisper({ subsets: ["latin"], weight: ["400"] });
 
@@ -55,20 +56,28 @@ const Navbar = () => {
         </div>
         <div className="hidden ml-auto justify-self-end sm:block">
           <ul className="flex">
-            <li className="ml-4 hover:shadow-[rgba(0,0,0,1)_0px_5px_6px_-5px] hover:shadow-sky-500/50">
-              <a href="./interests">Interests</a>
+            <li className="ml-4 hidden hover:shadow-[rgba(0,0,0,1)_0px_5px_6px_-5px] hover:shadow-sky-500/50">
+              <a href="#" onClick={() => goToSection("interests")}>
+                Interests
+              </a>
             </li>
             <li className="ml-4 hover:shadow-[rgba(0,0,0,1)_0px_5px_6px_-5px] hover:shadow-sky-500/50">
-              <a href="./connectWithMe">Contact</a>
+              <a href="#" onClick={() => goToSection("contact")}>
+                Contact
+              </a>
             </li>
             <li className="ml-4 hover:shadow-[rgba(0,0,0,1)_0px_5px_6px_-5px] hover:shadow-sky-500/50">
-              <a href="./projects">Projects</a>
+              <a href="#" onClick={() => goToSection("projects")}>
+                Projects
+              </a>
             </li>
             <li className="ml-4 hover:shadow-[rgba(0,0,0,1)_0px_5px_6px_-5px] hover:shadow-sky-500/50">
-              <a href="./resume">Resume</a>
+              <a href="#" onClick={() => goToSection("resume")}>
+                Resume
+              </a>
             </li>
             <li className="ml-4 hover:shadow-[rgba(0,0,0,1)_0px_5px_6px_-5px] hover:shadow-sky-500/50">
-              <a href="./home">Home</a>
+              <a href="/">Home</a>
             </li>
           </ul>
         </div>
@@ -83,20 +92,28 @@ const Navbar = () => {
           <div className="overlay-menu-inner mr-4">
             <nav>
               <ul>
-                <li className="my-4 text-center hover:shadow-[rgba(0,0,0,1)_0px_5px_4px_-5px] hover:shadow-sky-500/50">
-                  <a href="./interests">Interests</a>
+                <li className="my-4 hidden text-center hover:shadow-[rgba(0,0,0,1)_0px_5px_4px_-5px] hover:shadow-sky-500/50">
+                  <a href="#" onClick={() => goToSection("interests")}>
+                    Interests
+                  </a>
                 </li>
                 <li className="my-4 text-center hover:shadow-[rgba(0,0,0,1)_0px_5px_4px_-5px] hover:shadow-sky-500/50">
-                  <a href="./connectWithMe">Contact</a>
+                  <a href="#" onClick={() => goToSection("contact")}>
+                    Contact
+                  </a>
                 </li>
                 <li className="my-4 text-center hover:shadow-[rgba(0,0,0,1)_0px_5px_4px_-5px] hover:shadow-sky-500/50">
-                  <a href="./projects">Projects</a>
+                  <a href="#" onClick={() => goToSection("projects")}>
+                    Projects
+                  </a>
                 </li>
                 <li className="my-4 text-center hover:shadow-[rgba(0,0,0,1)_0px_5px_4px_-5px] hover:shadow-sky-500/50">
-                  <a href="./resume">Resume</a>
+                  <a href="#" onClick={() => goToSection("resume")}>
+                    Resume
+                  </a>
                 </li>
                 <li className="my-4 text-center hover:shadow-[rgba(0,0,0,1)_0px_5px_4px_-5px] hover:shadow-sky-500/50">
-                  <a href="./home">Home</a>
+                  <a href="/">Home</a>
                 </li>
               </ul>
             </nav>
