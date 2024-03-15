@@ -9,13 +9,8 @@ import {
   UserIcon,
 } from "@heroicons/react/solid";
 import React from "react";
+import { goToSection } from "./utils/navigation";
 
-export const goToSection = (sectionId) => {
-  const section = document.getElementById(sectionId);
-  if (section) {
-    section.scrollIntoView({ behavior: "smooth" });
-  }
-};
 function Home() {
   const projects = [
     {

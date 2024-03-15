@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Whisper } from "next/font/google";
-import Home, { goToSection } from "../page";
+import { goToSection } from "../utils/navigation";
 
 const whisper = Whisper({ subsets: ["latin"], weight: ["400"] });
 
