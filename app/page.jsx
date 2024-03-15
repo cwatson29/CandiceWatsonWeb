@@ -16,8 +16,7 @@ export const goToSection = (sectionId) => {
     section.scrollIntoView({ behavior: "smooth" });
   }
 };
-
-export default function Home() {
+function Home() {
   const projects = [
     {
       name: "ParishTec",
@@ -336,3 +335,4 @@ export default function Home() {
     </main>
   );
 }
+export default Home;
